@@ -72,4 +72,12 @@ class Pelicula {
       return 'https://image.tmdb.org/t/p/original/$posterPath';
     }
   }
+
+  getBackgroundImg() {
+    if (posterPath == null) {
+      return 'https://www.gumtree.com/static/1/resources/assets/rwd/images/orphans/a37b37d99e7cef805f354d47.noimage_thumbnail.png';
+    } else {
+      return 'https://image.tmdb.org/t/p/original/$backdropPath';
+    }
+  }
 }
